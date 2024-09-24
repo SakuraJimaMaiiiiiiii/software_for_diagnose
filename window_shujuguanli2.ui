@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1554</width>
+    <height>865</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color:rgb(234, 242, 255)
+}
+
+QTableWidget::item {
+    background-color:rgb(238, 238, 238);
+}
+QTableWidget::item {
+    color: transparent;
+}
+
+
+
+</string>
+  </property>
+  <widget class="QFrame" name="frame_menu">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1561</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{
+	background-color:rgb(226, 226, 226)
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>30</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>数据库管理</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_fanhui">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>30</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border:none
+}
+
+QPushButton::hover{
+	background-color:rgb(189, 189, 189);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>返回</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>90</y>
+     <width>1571</width>
+     <height>771</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{
+	background-color:rgb(203, 203, 203)
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QTableWidget" name="tableWidget_excel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>911</width>
+      <height>651</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>30</y>
+      <width>551</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <row>
+     <property name="text">
+      <string>均值</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>方差</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>标准差</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>新建行</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>最大值</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>最小值</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>峰值</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>均方根值</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>方根幅值</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>波形指标</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>峰值指标</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>脉冲指标</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>裕度指标</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>峭度</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>大气舱绝压(kPaA)
+</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>高度(m)
+</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>座舱绝压(kPaA)
+</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>座舱余压(kPaA)
+</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>总流量(kg/h)
+</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>控制腔压力(kPaA)
+</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>700</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>绘图</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>frame_menu</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
